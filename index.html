@@ -6,19 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre:400,700|Amiri:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Amatic+SC:400,700&display=swap" rel="stylesheet">
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/297733/Three.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"></script>
+  <script
+    src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js">
+  </script>
+  <script src="https://code.jquery.com/jquery-1.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
 </head>
 
 <body>
-  <section class="header">
-    <img class="logo" src="img/Ресурс 13.png" />
 
-    <ul>
-      <li>Басты бет</li>
-      <li>Курстар</li>
-      <li>Біз туралы</li>
-      <li>Байланыс</li>
-    </ul>
-  </section>
+  <header class="header">
+    <!-- <canvas id="canvas"></canvas> -->
+    <div class="menu">
+      <img class="logo" src="img/Ресурс 13.png" />
+
+      <ul>
+        <li>Басты бет</li>
+        <li>Курстар</li>
+        <li>Біз туралы</li>
+        <li>Байланыс</li>
+      </ul>
+    </div>
+  </header>
 
   <section class="space"></section>
 
@@ -198,8 +210,10 @@
 
     </section>
   </section>
-
-  <footer class="footer">
+  <div class="map">
+    <video src="video/video.mp4"></video>
+  </div>
+  <div class="footer">
     <div class="footer-logo">
       <img src="img/footer/logo.png" alt="">
     </div>
@@ -224,8 +238,21 @@
         <a href="" class=""><img src="img/footer/image3.png" alt=""></a>
       </section>
     </div>
-    <p class="u-center-text">2016-2020 “Bilge</p>
-  </footer>
+    <div class="bottomAdress">
+      <section>
+        <p class="phone">Phone: +7(727) 327 83 27</p>
+      </section>
+      <section class="adres">
+        <p>Алматы қаласы,</p>
+        <p>Шевченко көшесі 90, 1 қабат</p>
+        <p> E-mail: center@bilge.kz</p>
+      </section>
+    </div>
+
+    <p class="u-center-text cp">2016-2020 “Bilge</p>
+  </div>
+
+  <script src="video.js"></script>
 </body>
 
 </html>

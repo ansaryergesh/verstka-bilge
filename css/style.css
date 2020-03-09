@@ -4,10 +4,11 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5% !important;
   overflow-x: hidden; }
 
 body {
+  position: relative;
   margin: 0;
   font-size: 1.6rem;
   font-family: Abhaya Libre;
@@ -34,28 +35,6 @@ p {
 
 .u-margin-top-huge {
   margin-top: 10rem; }
-
-.logo {
-  height: 50px;
-  margin-left: 60px; }
-
-.header {
-  padding: 15px;
-  background-color: #2E2955;
-  height: 100vh;
-  text-indent: .1em;
-  color: white;
-  border-radius: 0 0 100% 100%; }
-  .header ul {
-    display: flex;
-    float: right; }
-    .header ul li {
-      margin-right: 40px;
-      list-style: none; }
-
-.space {
-  background-color: white;
-  height: 40vh; }
 
 .block2 {
   position: relative;
@@ -230,14 +209,49 @@ p {
     text-align: center;
     width: 20%; }
 
+.logo {
+  height: 50px;
+  margin-left: 60px; }
+
+.phone {
+  font-size: Alegreya Sans; }
+
+#canvas {
+  height: 100vh;
+  width: 100%; }
+
+.header {
+  padding: 15px;
+  background: url(../img/bilgen_header_back.png) no-repeat;
+  background-size: cover;
+  transform: scale(1.02);
+  height: 110vh;
+  text-indent: .1em;
+  color: white; }
+  .header ul {
+    display: flex;
+    float: right; }
+    .header ul li {
+      margin-right: 40px;
+      list-style: none; }
+
+.space {
+  background-color: white;
+  height: 40vh; }
+
+.bottomAdress {
+  margin: auto;
+  display: flex; }
+
 .footer {
   background: rgba(0, 0, 51, 0.8);
-  padding: 40px;
-  padding-bottom: 10px;
+  margin-top: 100px;
   color: white;
-  line-height: .7;
-  margin-bottom: 0;
-  bottom: 0px; }
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 2.5rem;
+  position: relative; }
   .footer .top {
     display: flex;
     padding-left: 150px; }
@@ -245,7 +259,8 @@ p {
     margin: 35px;
     width: 20%; }
     .footer section p {
-      font-size: 1.2rem; }
+      font-size: 1.2rem;
+      line-height: .7; }
   .footer .social a {
     margin: 5px; }
 
@@ -253,5 +268,21 @@ p {
   padding-left: 150px; }
 
 .footer-logo {
-  float: right;
-  height: 100%; }
+  position: absolute;
+  height: 35%;
+  margin: auto 0;
+  top: 10%;
+  right: 0;
+  float: right; }
+
+.bottomAdress {
+  padding-left: 150px; }
+
+.map {
+  margin: 0 !important;
+  margin-top: 55px;
+  padding: 0;
+  line-height: 0; }
+  .map video {
+    width: 100%;
+    transform: scale(1.2); }
