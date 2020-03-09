@@ -1,0 +1,254 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden; }
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  font-family: Abhaya Libre;
+  font-style: normal;
+  letter-spacing: 1.2px; }
+
+p {
+  font-family: Amiri; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
+
+.u-margin-top-big {
+  margin-top: 8rem; }
+
+.u-margin-top-huge {
+  margin-top: 10rem; }
+
+.logo {
+  height: 50px;
+  margin-left: 60px; }
+
+.header {
+  padding: 15px;
+  background-color: #2E2955;
+  height: 100vh;
+  text-indent: .1em;
+  color: white;
+  border-radius: 0 0 100% 100%; }
+  .header ul {
+    display: flex;
+    float: right; }
+    .header ul li {
+      margin-right: 40px;
+      list-style: none; }
+
+.space {
+  background-color: white;
+  height: 40vh; }
+
+.block2 {
+  position: relative;
+  background: url("../img/vector/vecto1.png") no-repeat;
+  background-size: cover;
+  height: 100vh; }
+
+.vectorLine {
+  object-fit: cover; }
+
+.dashedLine {
+  position: absolute;
+  top: 65%;
+  transform: translateY(-65%);
+  width: 100vw; }
+
+.name {
+  font-family: Arbutus Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 30px; }
+
+.year {
+  font-family: Arbutus Slab;
+  font-style: normal;
+  font-weight: normal;
+  color: #FEFEFE;
+  font-size: 3rem;
+  line-height: 25px; }
+
+.belgiBlock {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 15.8%;
+  color: #FEFEFE; }
+  .belgiBlock img {
+    width: 12vw; }
+
+.bilgen {
+  position: absolute;
+  text-align: center;
+  top: 49.5%;
+  left: 43.5%;
+  color: #FEFEFE; }
+  .bilgen img {
+    width: 12vw; }
+
+.bilgenTech {
+  position: absolute;
+  text-align: center;
+  top: 25%;
+  left: 79%;
+  color: #FEFEFE; }
+  .bilgenTech img {
+    width: 10vw; }
+
+.smallBlock {
+  margin-top: 155px;
+  padding: 0 25px;
+  display: flex;
+  justify-content: center; }
+
+.bigBlock {
+  width: 55%;
+  padding: 10px;
+  padding-top: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  position: relative;
+  margin: 65px; }
+  .bigBlock .date {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 15px; }
+  .bigBlock .wrap {
+    margin-bottom: 55px; }
+  .bigBlock .text::after {
+    content: "";
+    clear: both;
+    display: table; }
+  .bigBlock img {
+    width: 50%;
+    float: right;
+    margin: 15px; }
+
+.block {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: block;
+  margin: 25px 6px;
+  padding-bottom: 10px;
+  width: 23%; }
+  .block:first-child {
+    margin-left: 0; }
+  .block:last-child {
+    margin-right: 0; }
+  .block img {
+    width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
+.blockText {
+  padding: 5px 8px; }
+  .blockText .text {
+    font-family: Advent Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #808080;
+    text-align: justify;
+    padding: 20px; }
+
+.date {
+  color: #808080;
+  font-family: Advent Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.3rem;
+  float: right; }
+
+.head {
+  color: #2980B9;
+  font-family: Abhaya Libre;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-top: 55px;
+  text-transform: uppercase;
+  padding: 0 15px;
+  line-height: 0; }
+
+.comments {
+  float: right;
+  background: #F7F7F7;
+  border: 1px solid #808080;
+  box-sizing: border-box;
+  border-radius: 25px;
+  padding: 13px 25px;
+  margin-bottom: px; }
+
+.block3Line {
+  width: 70%;
+  float: left;
+  position: relative;
+  top: 10px; }
+
+.team {
+  margin: auto;
+  padding: 85px 0; }
+  .team h1 {
+    text-align: center;
+    margin-bottom: 55px; }
+
+.teamMember {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  margin: 0 60px; }
+  .teamMember:nth-child(2n+1) {
+    flex-direction: row-reverse; }
+  .teamMember section {
+    margin: 0 100px; }
+  .teamMember .memberName p {
+    text-align: center;
+    color: #2980B9;
+    font-weight: bold;
+    width: 50%;
+    margin: auto; }
+  .teamMember .memberText {
+    text-align: center;
+    width: 20%; }
+
+.footer {
+  background: rgba(0, 0, 51, 0.8);
+  padding: 30px;
+  padding-bottom: 10px;
+  color: white; }
+  .footer .top {
+    display: flex;
+    align-items: center;
+    padding-left: 150px; }
+  .footer section {
+    margin: 35px;
+    width: 20%; }
+    .footer section p {
+      font-size: 1.2rem; }
+  .footer .social a {
+    margin: 5px; }
+
+.bottom {
+  padding-left: 150px; }
+
+.logo {
+  float: right; }
