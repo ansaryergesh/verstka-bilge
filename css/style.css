@@ -209,36 +209,6 @@ p {
     text-align: center;
     width: 20%; }
 
-.logo {
-  height: 50px;
-  margin-left: 60px; }
-
-.phone {
-  font-size: Alegreya Sans; }
-
-#canvas {
-  height: 100vh;
-  width: 100%; }
-
-.header {
-  padding: 15px;
-  background: url(../img/bilgen_header_back.png) no-repeat;
-  background-size: cover;
-  transform: scale(1.02);
-  height: 110vh;
-  text-indent: .1em;
-  color: white; }
-  .header ul {
-    display: flex;
-    float: right; }
-    .header ul li {
-      margin-right: 40px;
-      list-style: none; }
-
-.space {
-  background-color: white;
-  height: 40vh; }
-
 .bottomAdress {
   margin: auto;
   display: flex; }
@@ -246,10 +216,10 @@ p {
 .footer {
   background: rgba(0, 0, 51, 0.8);
   margin-top: 100px;
+  width: 100vw;
+  margin-left: 0;
+  margin-right: 0;
   color: white;
-  right: 0;
-  bottom: 0;
-  left: 0;
   padding: 2.5rem;
   position: relative; }
   .footer .top {
@@ -286,3 +256,48 @@ p {
   .map video {
     width: 100%;
     transform: scale(1.2); }
+
+.logo {
+  height: 50px;
+  margin-left: 60px; }
+
+.phone {
+  font-size: Alegreya Sans; }
+
+.logo {
+  height: 50px;
+  margin-left: 40px;
+  margin-top: 10px; }
+
+.phone {
+  font-size: Alegreya Sans; }
+
+#canvas {
+  height: 100vh;
+  width: 100%; }
+
+.header {
+  padding: 15px;
+  background: url(../img/bilgen_header_back.png) no-repeat center;
+  background-size: cover;
+  transform: scale(1.02);
+  height: 110vh;
+  text-indent: .1em;
+  color: white; }
+  .header ul {
+    display: flex;
+    float: right; }
+    .header ul li {
+      margin-right: 40px;
+      list-style: none; }
+
+.space {
+  background-color: white;
+  height: 40vh; }
+
+@media only screen and (max-width: 768px) {
+  .header {
+    background: url(../img/headerback_mobilka.png) no-repeat center;
+    background-size: cover; }
+    .header ul {
+      display: none; } }
