@@ -41,7 +41,8 @@ p {
   position: relative;
   background: url("../img/vector/vecto1.png") no-repeat;
   background-size: cover;
-  height: 100vh; }
+  height: 100vh;
+  width: 100vw; }
 
 .vectorLine {
   object-fit: cover; }
@@ -140,10 +141,6 @@ p {
   margin: 25px 10px;
   padding-bottom: 8px;
   width: 23%; }
-  .block:first-child {
-    margin-left: 0; }
-  .block:last-child {
-    margin-right: 0; }
   .block img {
     width: 100%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
@@ -189,7 +186,7 @@ p {
   padding: 0 !important;
   width: 70%; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .text {
     font-size: 1.2rem; }
   .newsTop {
@@ -235,6 +232,10 @@ p {
     display: block; }
   .block {
     width: 100%; }
+    .block:first-child {
+      margin-left: inherit; }
+    .block:last-child {
+      margin-right: inherit; }
     .block img {
       width: 90%;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
@@ -244,9 +245,14 @@ p {
     margin-right: 5px;
     font-size: 1.2rem; } }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .block {
+    width: 50% !important; } }
+
 .team {
   margin: auto;
-  padding: 85px 0; }
+  padding: 85px 0;
+  width: 100; }
   .team h1 {
     text-align: center;
     margin-bottom: 55px; }
@@ -269,6 +275,10 @@ p {
   .teamMember .memberText {
     text-align: center;
     width: 20%; }
+
+@media only screen and (max-width: 767px) {
+  .team {
+    padding: 35px 0; } }
 
 .bottomAdress {
   margin: auto;
@@ -299,9 +309,9 @@ p {
   padding-left: 150px; }
 
 .footer-logo {
+  margin-right: 25px;
   position: absolute;
   height: 35%;
-  margin: auto 0;
   top: 10%;
   right: 0;
   float: right; }
@@ -309,21 +319,24 @@ p {
 .bottomAdress {
   padding-left: 150px; }
 
+.logo {
+  height: 50px; }
+
+.phone {
+  font-size: Alegreya Sans; }
+
+.menu {
+  position: absolute; }
+
 .map {
   margin: 0 !important;
   margin-top: 55px;
   padding: 0;
   line-height: 0; }
   .map video {
+    display: block;
     width: 100%;
-    transform: scale(1.2); }
-
-.logo {
-  height: 50px;
-  margin-left: 60px; }
-
-.phone {
-  font-size: Alegreya Sans; }
+    transform: scale(1.24); }
 
 .logo {
   height: 50px;
