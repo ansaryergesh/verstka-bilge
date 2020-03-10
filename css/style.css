@@ -204,13 +204,13 @@ p {
       order: 3; }
     .newsTop img {
       margin: 0px !important;
-      width: 40%; }
+      width: 100%; }
     .newsTop .date {
       color: #808080;
       font-family: Advent Pro;
       font-style: normal;
       font-weight: normal;
-      font-size: .5rem;
+      font-size: 1rem;
       float: none;
       margin-left: 0px; }
     .newsTop .head {
@@ -219,7 +219,7 @@ p {
       font-family: Abhaya Libre;
       font-style: normal;
       font-weight: bold;
-      font-size: 1rem;
+      font-size: 1.4rem;
       margin-top: 0;
       text-transform: uppercase;
       padding: 0 0;
