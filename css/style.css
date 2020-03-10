@@ -13,7 +13,8 @@ body {
   font-size: 1.6rem;
   font-family: Abhaya Libre;
   font-style: normal;
-  letter-spacing: 1.2px; }
+  letter-spacing: 1.2px;
+  overflow-x: hidden; }
 
 p {
   font-family: Amiri; }
@@ -93,11 +94,17 @@ p {
   .bilgenTech img {
     width: 10vw; }
 
+.newsBlock {
+  margin-top: 105px; }
+
 .smallBlock {
-  margin-top: 155px;
+  margin-top: 80px;
   padding: 0 25px;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  align-items: flex-start; }
+  .smallBlock p {
+    margin-right: 5px; }
 
 .bigBlock {
   width: 55%;
@@ -111,23 +118,27 @@ p {
     position: absolute;
     bottom: 0;
     right: 0;
-    margin: 15px; }
+    margin: 25px; }
   .bigBlock .wrap {
     margin-bottom: 55px; }
-  .bigBlock .text::after {
-    content: "";
-    clear: both;
-    display: table; }
   .bigBlock img {
     width: 50%;
     float: right;
     margin: 15px; }
 
+.text {
+  padding: 0 15px; }
+  .text::after {
+    content: "";
+    clear: both;
+    display: table; }
+
 .block {
+  position: relative;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: block;
-  margin: 25px 6px;
-  padding-bottom: 10px;
+  margin: 25px 10px;
+  padding-bottom: 8px;
   width: 23%; }
   .block:first-child {
     margin-left: 0; }
@@ -137,25 +148,14 @@ p {
     width: 100%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
 
-.blockText {
-  padding: 5px 8px; }
-  .blockText .text {
-    font-family: Advent Pro;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    color: #808080;
-    text-align: justify;
-    padding: 20px; }
-
 .date {
   color: #808080;
   font-family: Advent Pro;
   font-style: normal;
   font-weight: normal;
   font-size: 1.3rem;
-  float: right; }
+  float: right;
+  margin-left: 15px; }
 
 .head {
   color: #2980B9;
@@ -166,7 +166,8 @@ p {
   margin-top: 55px;
   text-transform: uppercase;
   padding: 0 15px;
-  line-height: 0; }
+  line-height: 0;
+  text-align: center; }
 
 .comments {
   float: right;
@@ -175,13 +176,67 @@ p {
   box-sizing: border-box;
   border-radius: 25px;
   padding: 13px 25px;
-  margin-bottom: px; }
+  margin-right: 5px; }
+
+.newsComment {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 15px !important; }
 
 .block3Line {
-  width: 70%;
-  float: left;
-  position: relative;
-  top: 10px; }
+  margin-left: 0 !important;
+  padding: 0 !important;
+  width: 70%; }
+
+@media only screen and (max-width: 768px) {
+  .newsTop {
+    float: left;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px; }
+    .newsTop::nth-child(3) {
+      order: 1; }
+    .newsTop:nth-child(1) {
+      order: 2; }
+    .newsTop::nth-child(2) {
+      order: 3; }
+    .newsTop img {
+      margin: 0px !important;
+      width: 40%; }
+    .newsTop .date {
+      color: #808080;
+      font-family: Advent Pro;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.3rem;
+      float: none;
+      margin-left: 0px; }
+    .newsTop .head {
+      order: -1;
+      color: #2980B9;
+      font-family: Abhaya Libre;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 1.8rem;
+      margin-top: 0;
+      text-transform: uppercase;
+      padding: 0 0;
+      line-height: 0;
+      text-align: center; }
+  .block3Line {
+    width: 80%; }
+  .bigBlock {
+    display: none; }
+  .smallBlock {
+    display: block; }
+  .block {
+    width: 100%;
+    padding: 15px; }
+    .block img {
+      width: 90%;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); } }
 
 .team {
   margin: auto;
@@ -267,7 +322,7 @@ p {
 .logo {
   height: 50px;
   margin-left: 40px;
-  margin-top: 10px; }
+  margin-top: 20px; }
 
 .phone {
   font-size: Alegreya Sans; }
@@ -298,6 +353,8 @@ p {
 @media only screen and (max-width: 768px) {
   .header {
     background: url(../img/headerback_mobilka.png) no-repeat center;
-    background-size: cover; }
+    background-size: cover;
+    transform: scale(1.05);
+    overflow-x: hidden; }
     .header ul {
       display: none; } }
