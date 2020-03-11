@@ -24,7 +24,7 @@ function showVisible() {
       video.loop = true;
       window.onscroll = showVisible;
     } else {
-      video.load();
+      // video.load();
     //   window.onscroll = '';
 
     }

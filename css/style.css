@@ -14,7 +14,8 @@ body {
   font-family: Abhaya Libre;
   font-style: normal;
   letter-spacing: 1.2px;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  min-width: 100%; }
 
 p {
   font-family: Amiri; }
@@ -103,7 +104,8 @@ p {
   padding: 0 25px;
   display: flex;
   justify-content: center;
-  align-items: flex-start; }
+  align-items: flex-start;
+  color: black; }
   .smallBlock p {
     margin-right: 5px; }
 
@@ -250,9 +252,10 @@ p {
     width: 50% !important; } }
 
 .team {
+  display: block;
   margin: auto;
   padding: 85px 0;
-  width: 100; }
+  width: 100%; }
   .team h1 {
     text-align: center;
     margin-bottom: 55px; }
@@ -284,46 +287,53 @@ p {
   margin: auto;
   display: flex; }
 
+.footerDate {
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+
 .footer {
+  width: 100vw !important;
   background: rgba(0, 0, 51, 0.8);
   margin-top: 100px;
-  width: 100vw;
   margin-left: 0;
   margin-right: 0;
   color: white;
-  padding: 2.5rem;
+  padding: 2rem;
   position: relative; }
   .footer .top {
     display: flex;
     padding-left: 150px; }
   .footer section {
-    margin: 35px;
-    width: 20%; }
+    margin: 35px; }
     .footer section p {
       font-size: 1.2rem;
       line-height: .7; }
-  .footer .social a {
-    margin: 5px; }
+  .footer .social {
+    display: flex; }
+    .footer .social a {
+      display: flex;
+      margin: 8px; }
+
+.topAddress {
+  display: flex; }
 
 .bottom {
   padding-left: 150px; }
 
 .footer-logo {
-  margin-right: 25px;
-  position: absolute;
-  height: 35%;
-  top: 10%;
-  right: 0;
-  float: right; }
+  align-items: center; }
 
 .bottomAdress {
-  padding-left: 150px; }
-
-.logo {
-  height: 50px; }
+  display: flex; }
 
 .phone {
   font-size: Alegreya Sans; }
+
+@media only screen and (max-width: 768px) {
+  .footerDate {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); } }
 
 .menu {
   position: absolute; }
